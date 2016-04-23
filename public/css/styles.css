@@ -1,0 +1,142 @@
+body{
+    background:#FFFFFF;
+    font-family: sans-serif;
+    color: #3E4352;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.yellow{
+    color: #FDAF24;
+}
+
+.center{
+    text-align: center;
+}
+
+.section{
+    color: #3E4352;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.graphic{
+    background: #FFFFFF;
+}
+
+.information{
+    background: #E3E3E3;
+    
+}
+
+.graphs{
+    background: #FFFFFF;
+}
+
+.angular{
+    background: #E3E3E3;
+}
+
+.sectioncontent{
+     width: 80%;
+     display: block;
+     margin: auto;
+}
+
+.datalink{
+     padding-top: 50px;
+     display: block;
+     margin: auto;
+     text-align: center;
+}
+
+.datalink div{
+    border: 3px solid #3E4352;
+    padding: 12px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.datalink.graph1 div{
+    border: 3px solid #E65848;
+    color: #E65848;
+}
+
+.datalink.graph1 div a{
+    color: #E65848;
+}
+
+.datalink.graph1 div a:hover{
+    text-decoration: none;
+}
+
+.datalink.graph1 div:hover{
+    opacity: 0.4;
+}
+
+
+.datalink.graph2 div{
+    border: 3px solid #2AB69D;
+    color: #2AB69D;
+}
+
+.datalink.graph2 div a{
+    color: #2AB69D;
+}
+
+.datalink.graph2 div a:hover{
+    text-decoration: none;
+}
+
+.datalink.graph2 div:hover{
+    opacity: 0.4;
+}
+
+.datalink.graph3 div{
+    border: 3px solid #FDAF24;
+    color: #FDAF24;
+}
+
+.datalink.graph3 div a{
+    color: #FDAF24;
+}
+
+.datalink.graph3 div a:hover{
+    text-decoration: none;
+}
+
+.datalink.graph3 div:hover{
+    opacity: 0.4;
+}
+
+.graph{
+    padding-top: 20px;
+    height: 100px;
+}
+
+
+/* grouped barchart */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
