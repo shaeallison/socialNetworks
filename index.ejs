@@ -1,0 +1,99 @@
+<html>
+    <head>
+          <title>583 Final Project</title>
+           
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    </head>
+
+<body ng-app="myApp" ng-controller="BaseController as base">
+    
+    
+<div class="section center graphic">
+    <h1 class="center">Social Networking</h1>
+    <p> This section will host a graphic combinding all of the style colors </p>
+</div>
+
+<div class="section center information">
+    <div class="sectioncontent">
+        <h2>Information Section Header</h2>
+        <p> In cursus, sapien ut pulvinar mollis, est risus gravida sapien, id ultricies dui ipsum quis dui. Integer fringilla lacus sed odio dictum dictum. Quisque sodales laoreet eros, id vehicula massa laoreet id. Donec porttitor sem id urna vulputate, eget cursus dui venenatis. Aliquam commodo felis quis velit malesuada dignissim. Vivamus elit metus, egestas ac posuere ac, vehicula sed lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p> Phasellus euismod ante at porta consequat. Cras arcu nisl, congue in condimentum at, aliquam non mi. Donec dolor eros, porttitor vel turpis vitae, maximus semper tortor. Integer egestas leo consequat neque placerat, sed venenatis tortor tristique. Sed sodales orci a sollicitudin venenatis. Nam ac diam nulla. Praesent non enim mauris. Duis quis tristique tellus.</p>
+        <div class="datalink graph1 col-md-4">
+            <div><a href="#">Graph 1</a></div>
+        </div>
+        <div class="datalink graph2 col-md-4">
+            <div><a href="#">Graph 2</a></div>
+        </div>
+        <div class="datalink graph3 col-md-4">
+            <div><a href="#">Graph 3</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="section center graphs">
+    <div class="sectioncontent">
+        <h2>Graphs Section Header</h2>
+        <p> This section will host 2 or 3 graphs (the D3 component of the project) </p>
+    
+        <div class="graph col-md-4">
+            <p>graph 1</p>
+        </div>
+        <div class=" graph col-md-4">
+            <p>graph 1</p>
+        </div>
+        <div class="graph col-md-4">
+            <p>graph 1</p>
+        </div>
+    </div>
+</div>
+
+<div class="section center angular">
+    <div class="sectioncontent">
+        <div ng-controller="NetworksController as networkCtrl">
+        <h2>Networks</h2>
+        <br />
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Network</th>
+                        <th>Total Users (Billions)</th>
+                    </tr>
+                </thead>
+                <tr ng-repeat="networks in networkCtrl.networks">
+                    <td>{{networks.name}}</td>
+                    <td>{{network.share}}</td>
+                </tr>
+            </table>
+        </div>
+        </div> <!-- Network ctrl -->
+    </div>
+</div>
+
+<div class="row">
+    <script type="text/javascript" src="js/grouped.js"></script>
+ </div>
+ <div class="tooltip styles"></div>
+ 
+  <br />
+ <hr />
+ <br />
+
+<div id="chart">
+    <script type="text/javascript" src="js/donut.js"></script>
+</div>
+
+ <script type="text/javascript" src="js/angular.js"></script>
+ <script type="text/javascript" src="js/app.js"></script>
+ <script type="text/javascript" src="js/network.js"></script>
+ <!-- <script type="text/javascript" src="js/grouped.js"></script>
+ <script type="text/javascript" src="js/donut.js"></script> -->
+ <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+ 
+ 
+</body>
+</html>
