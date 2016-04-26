@@ -29,7 +29,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("share_of_users.csv", function(error, data) {
+d3.csv("/js/share_of_users.csv", function(error, data) {
   if (error) throw error;
 
   var networkNames = d3.keys(data[0]).filter(function(key) { return key !== "Year"; });
@@ -83,8 +83,8 @@ d3.csv("share_of_users.csv", function(error, data) {
             .on('mousemove', function(d) {
                 console.log(d3.event);
                 d3.select('.tooltip')
-                    .style('left', (d3.event.clientX + 20) + 'px')
-                    .style('top', (d3.event.clientY) + 'px');
+                  .style('top', (d3.event.layerY + 10) + 'px')  
+                  .style('left', (d3.event.layerX + 10) + 'px'); 
       });
 
   var legend = svg.selectAll(".legend")

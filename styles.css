@@ -23,8 +23,9 @@ a:hover{
 
 .section{
     color: #3E4352;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    min-height: 500px;
+    max-height: 700px;
+    width: 100%;
 }
 
 .graphic{
@@ -163,7 +164,6 @@ svg{
 
 .tooltip {
     position: absolute;
-    background: none;
     color: #E69987;
     font-size: 48px;
     font-weight: 700;
@@ -208,4 +208,14 @@ svg{
         width: 120px;                                          
         z-index: 10;
         border: 4px solid #3E4352;
-      }   
+      }
+      
+      
+/* graph sections */
+
+div.row.graph{
+    margin: 20px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}

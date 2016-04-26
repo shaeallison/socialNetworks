@@ -10,7 +10,7 @@ app.controller('NetworksController', ['$http', function($http) {
         .success(function(data) {
             console.log(data);
             console.log(this);
-            _this.share = data;
+            _this.networks = data;
         })
         .error(function(msg) {
             console.log("This request failed.\n" + msg);

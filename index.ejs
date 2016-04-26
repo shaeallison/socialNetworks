@@ -4,12 +4,15 @@
            
 <link rel="stylesheet" href="css/styles.css" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript" src="js/angular.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
 
     </head>
 
 <body ng-app="myApp" ng-controller="BaseController as base">
-    
+   
     
 <div class="section center graphic">
     <h1 class="center">Social Networking</h1>
@@ -35,20 +38,16 @@
 
 <div class="section center graphs">
     <div class="sectioncontent">
-        <h2>Graphs Section Header</h2>
-        <p> This section will host 2 or 3 graphs (the D3 component of the project) </p>
-    
-        <div class="graph col-md-4">
-            <p>graph 1</p>
-        </div>
-        <div class=" graph col-md-4">
-            <p>graph 1</p>
-        </div>
-        <div class="graph col-md-4">
-            <p>graph 1</p>
-        </div>
+        <h2>Graph 1 Section Header</h2>
+        <p> This section will host 1 graph (the D3 component of the project) </p>
+
+            <script type="text/javascript" src="js/grouped.js"></script>
+        <div class="tooltip styles"></div>
+
     </div>
 </div>
+
+
 
 <div class="section center angular">
     <div class="sectioncontent">
@@ -56,16 +55,20 @@
         <h2>Networks</h2>
         <br />
         <div class="row">
-            <table class="table table-striped">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Network</th>
                         <th>Total Users (Billions)</th>
+                        <th>Percentage Share</th>
+                        <th>Years Active</th>
                     </tr>
                 </thead>
                 <tr ng-repeat="networks in networkCtrl.networks">
                     <td>{{networks.name}}</td>
-                    <td>{{network.share}}</td>
+                    <td>{{networks.share}}</td>
+                    <td>{{networks.visits}}</td>
+                    <td>{{networks.active}}</td>
                 </tr>
             </table>
         </div>
@@ -73,26 +76,21 @@
     </div>
 </div>
 
-<div class="row">
-    <script type="text/javascript" src="js/grouped.js"></script>
- </div>
- <div class="tooltip styles"></div>
- 
-  <br />
- <hr />
- <br />
-
+ <div class="section >
+<div class="row graph">
+    <h1>HELLO</h1>
+    <h4>Some information</h4>
 <div id="chart">
     <script type="text/javascript" src="js/donut.js"></script>
 </div>
+</div>
+</div>
 
- <script type="text/javascript" src="js/angular.js"></script>
  <script type="text/javascript" src="js/app.js"></script>
  <script type="text/javascript" src="js/network.js"></script>
  <!-- <script type="text/javascript" src="js/grouped.js"></script>
  <script type="text/javascript" src="js/donut.js"></script> -->
- <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+
  
  
 </body>

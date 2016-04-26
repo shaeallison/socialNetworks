@@ -45,7 +45,7 @@
         tooltip1.append('div')                               
           .attr('class', 'percent');
           
-          d3.csv('popular_sites.csv', function(error, dataset) {
+          d3.csv('/js/popular_sites.csv', function(error, dataset) {
           dataset.forEach(function(d) {
             d.data = +d.data;
           });
