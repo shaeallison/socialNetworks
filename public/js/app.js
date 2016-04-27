@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', ['share']);
+var app = angular.module('myApp', ['networks']);
 
 
 app.controller('BaseController', function() {

@@ -1,0 +1,42 @@
+[{
+        "name": "Facebook",
+        "share": 72,
+        "visits": "43.9%",
+        "active": 12
+    },
+    {
+        "name": "Pinterest",
+        "share": 31,
+        "visits": "1.6%",
+        "active": 6
+    },
+    {
+        "name": "Instagram",
+        "share": 28,
+        "visits": "1.6%",
+        "active": 5
+    },
+    {
+        "name": "LinkedIn",
+        "share": 25,
+        "visits": "1.5%",
+        "active": 13
+    },
+    {
+        "name": "YouTube",
+        "share": "n/a",
+        "visits": "21.8%",
+        "active": 11
+    },
+    {
+        "name": "Reddit",
+        "share": "n/a",
+        "visits": "5.3%",
+        "active": 10
+    },
+    {
+        "name": "Twitter",
+        "share": 23,
+        "visits": "5%",
+        "active": 10
+}]

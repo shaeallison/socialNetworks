@@ -12,7 +12,7 @@ var y = d3.scale.linear()
     .range([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#2AB69D", "#343844", "#E65848", "#FDAF24", "#FCF2E3"]);
 
 var xAxis = d3.svg.axis()
     .scale(x0)
@@ -29,7 +29,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("share_of_users.csv", function(error, data) {
+d3.csv("/js/share_of_users.csv", function(error, data) {
   if (error) throw error;
 
   var networkNames = d3.keys(data[0]).filter(function(key) { return key !== "Year"; });
@@ -50,12 +50,12 @@ d3.csv("share_of_users.csv", function(error, data) {
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Population");
+    //.append("text")
+      //.attr("transform", "rotate(-90)")
+      //.attr("y", 6)
+      //.attr("dy", ".71em")
+      //.style("text-anchor", "end")
+      //.text("Users");
 
   var year = svg.selectAll(".year")
       .data(data)
@@ -70,7 +70,22 @@ d3.csv("share_of_users.csv", function(error, data) {
       .attr("x", function(d) { return x1(d.name); })
       .attr("y", function(d) { return y(d.value); })
       .attr("height", function(d) { return height - y(d.value); })
-      .style("fill", function(d) { return color(d.name); });
+      .style("fill", function(d) { return color(d.name); })
+      .on('mouseover', function(d) {
+                d3.select('.tooltip')
+                    .html(d.name + "<br />" +  d.value + " Million"  )
+                    .style('opacity', 1);
+            })
+            .on('mouseout', function(d) {
+                d3.select('.tooltip')
+                    .style('opacity', 0);
+            })
+            .on('mousemove', function(d) {
+                console.log(d3.event);
+                d3.select('.tooltip')
+                  .style('top', (d3.event.layerY + 10) + 'px')  
+                  .style('left', (d3.event.layerX + 10) + 'px'); 
+      });
 
   var legend = svg.selectAll(".legend")
       .data(networkNames.slice().reverse())
@@ -90,5 +105,7 @@ d3.csv("share_of_users.csv", function(error, data) {
       .attr("dy", ".35em")
       .style("text-anchor", "end")
       .text(function(d) { return d; });
+      
+
 
 });

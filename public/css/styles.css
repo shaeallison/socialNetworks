@@ -23,8 +23,8 @@ a:hover{
 
 .section{
     color: #3E4352;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .graphic{
@@ -33,7 +33,6 @@ a:hover{
 
 .information{
     background: #E3E3E3;
-    
 }
 
 .graphs{
@@ -119,10 +118,6 @@ a:hover{
     opacity: 0.4;
 }
 
-.graph{
-    padding-top: 20px;
-    height: 100px;
-}
 
 
 /* grouped barchart */
@@ -139,4 +134,86 @@ a:hover{
 
 .x.axis path {
   display: none;
+}
+
+.y.axis{
+    display: none;
+}
+
+.bar:hover {
+    fill: #677285;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.bar{
+    fill: #D6DFEE;
+}
+
+svg{
+    display: block;
+    margin: auto;
+    overflow: auto;
+}
+
+.tooltip {
+    position: absolute;
+    color: #E69987;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.tooltip.styles{
+    position: absolute;
+    background: white;
+    color: #3E4352;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 10px 20px;
+    border: 4px solid #3E4352;
+}
+
+/* Donut chart */
+
+#chart {                                                      
+    height: 560px;                                                                                   
+    width: 560px;
+    display: block;
+    margin: auto;
+    }
+
+.tooltip1 {                                                  
+        background: white;                                                    
+        color: #333;                                          
+        display: none;                                            
+        font-size: 20px;
+        font-weight: 600;
+        left: 130px;                                                
+        padding: 10px;                                                
+        position: absolute;                                     
+        text-align: center;                                        
+        top: 95px;                                              
+        width: 120px;                                          
+        z-index: 10;
+        border: 4px solid #3E4352;
+      }
+      
+      
+/* graph sections */
+
+div.row.graph{
+    margin: 20px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+
+.graphic img{
+    width: 80%;
 }
