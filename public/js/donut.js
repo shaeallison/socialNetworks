@@ -1,14 +1,11 @@
       (function(d3) {
         'use strict';
         var dataset = [
-          { Site: 'Facebook', data: 43.9 },
-          { Site: 'Twitter', data: 5 },
-          { Site: 'Pinterest', data: 1.6 },
-          { Site: 'Instagram', data: 1.6 },
-          { Site: 'LinkedIn', data: 1.5 },
-          {Site: 'YouTube', data: 21.8},
-          {Site: 'Reddit', data: 5.3},
-          {Site: 'Other', data: 3.4}
+          { Site: 'Facebook', data: 72 },
+          { Site: 'Twitter', data: 23 },
+          { Site: 'Pinterest', data: 31 },
+          { Site: 'Instagram', data: 28 },
+          { Site: 'LinkedIn', data: 25 }
         ];
         var width = 460;
         var height = 460;
@@ -17,7 +14,7 @@
         var legendRectSize = 18;                
         var legendSpacing = 4;  
         var color = d3.scale.ordinal()
-            .range(["#2AB69D", "#1D7F6E", "#8ADFC8", "#35E5C5", "#165E51", "#E65848", "#AA3F3E", "#E87B67"]);
+            .range(["#2AB69D", "#343844", "#E65848", "#FDAF24", "#FCF2E3"]);
         var svg = d3.select('#chart')
           .append('svg')
           .attr('width', width)

@@ -1,6 +1,6 @@
 <html>
     <head>
-          <title>583 Final Project</title>
+          <title>Social Networking</title>
            
 <link rel="stylesheet" href="css/styles.css" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,47 +22,45 @@
 
 <div class="section center information">
     <div class="sectioncontent">
-        <h2>Information Section Header</h2>
-        <p> In cursus, sapien ut pulvinar mollis, est risus gravida sapien, id ultricies dui ipsum quis dui. Integer fringilla lacus sed odio dictum dictum. Quisque sodales laoreet eros, id vehicula massa laoreet id. Donec porttitor sem id urna vulputate, eget cursus dui venenatis. Aliquam commodo felis quis velit malesuada dignissim. Vivamus elit metus, egestas ac posuere ac, vehicula sed lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-        <p> Phasellus euismod ante at porta consequat. Cras arcu nisl, congue in condimentum at, aliquam non mi. Donec dolor eros, porttitor vel turpis vitae, maximus semper tortor. Integer egestas leo consequat neque placerat, sed venenatis tortor tristique. Sed sodales orci a sollicitudin venenatis. Nam ac diam nulla. Praesent non enim mauris. Duis quis tristique tellus.</p>
+        <h2>Social Media Networks</h2>
+        <br />
+        <p>Social media networks have become increasingly popular over the past decade. Just in the last five years, the total number of social network users has jumped from <strong>970 million</strong> to over <strong>2 billion</strong>. The data shown presented below shows the overwhelming statistics for some of the most popular social media networks. Scroll down or use the navigational links below to jump to each section. Hover over the bar and circle graph to reveal exact data. </p>
         <div class="row">
         <div class="datalink graph1 col-md-4">
-            <div><a href="#">Graph 1</a></div>
+            <div><a href="#users">Users</a></div>
         </div>
         <div class="datalink graph2 col-md-4">
-            <div><a href="#">Graph 2</a></div>
+            <div><a href="#data">Data</a></div>
         </div>
         <div class="datalink graph3 col-md-4">
-            <div><a href="#">Graph 3</a></div>
+            <div><a href="#share">Share</a></div>
         </div>
         </div>
     </div>
 </div>
 
-<div class="section center graphs">
+<div class="section1 center graphs" id="users">
     <div class="sectioncontent">
-        <h2>Graph 1 Section Header</h2>
-        <p> This section will host 1 graph (the D3 component of the project) </p>
-
-            <div class="bargraph"><script type="text/javascript" src="js/grouped.js"></script></div>
+        <div class="bargraph"><script type="text/javascript" src="js/grouped.js"></script></div>
         <div class="tooltip styles"></div>
-
+        <h2>Active Network Users</h2>
+        <h4>Number of top network users in millions from 2012 to 2015</h4>
     </div>
 </div>
+<div class="bottom"></div>
 
 
-
-<div class="section center angular">
+<div class="section center angular" id="data">
     <div class="sectioncontent">
         <div ng-controller="NetworksController as networkCtrl">
-        <h2>Networks</h2>
+        <h2>Popular Networks</h2>
         <br />
-        <p> Phasellus euismod ante at porta consequat. Cras arcu nisl, congue in condimentum at, aliquam non mi. Donec dolor eros, porttitor vel turpis vitae, maximus semper tortor. Integer egestas leo consequat neque placerat, sed venenatis tortor tristique. Sed sodales orci a sollicitudin venenatis. Nam ac diam nulla. Praesent non enim mauris. Duis quis tristique tellus.</p>
-
+        <p>There are quite a few exceptionally popular networks today and listed below is just some of the top few. As you can seen from the graph above as well as the data in the table below, Facebook is by far the most used social media network with over <strong>1 billion</strong> active users.</p>
+        <br />
         <div class="row">
             <table class="table">
                 <thead>
-                    <tr>
+                    <tr class="tealtext">
                         <th>Network</th>
                         <th>Total Users (Billions)</th>
                         <th>Percentage Share</th>
@@ -81,18 +79,19 @@
     </div>
 </div>
 
- <div class="section center">
+<div class="section center" id="share">
 <div class="row graph">
-    <h1>HELLO</h1>
-    <h4>Some information</h4>
+    <h1>Percent Market Share</h1>
+    <h4>U.S. market share of leading social media websites as of April 2015</h4>
+    <br/>
 <div id="chart">
     <script type="text/javascript" src="js/donut.js"></script>
 </div>
 </div>
+<div class="center">JOMC 583 Final Project | Shae Allison</div>
 </div>
 
-<footer class="center">JOMC 583 Final Project | Shae Allison</footer>
-<br />
+
 
  <script type="text/javascript" src="js/app.js"></script>
  <script type="text/javascript" src="js/network.js"></script>

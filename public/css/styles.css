@@ -9,6 +9,10 @@ a{
     color: inherit;
 }
 
+h1.center{
+    margin-top: 0px;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -23,8 +27,17 @@ a:hover{
 
 .section{
     color: #3E4352;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.section1{
+    color: #3E4352;
+    padding-top: 8%;
+}
+
+.bottom{
+    padding-bottom: 8%;
 }
 
 .graphic{
@@ -216,4 +229,21 @@ div.row.graph{
 
 .graphic img{
     width: 80%;
+}
+
+tr.tealtext th{
+    color: #2AB69D;
+}
+
+th.coraltext{
+    color: #E65848;
+}
+
+th.navytext{
+    color: #343844;
+}
+
+th.yellowtext{
+    color: #FDAF24;
+}
 }
